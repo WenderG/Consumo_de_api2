@@ -3,15 +3,27 @@ import { APIKey } from '../config/Key'
 
 function Home() {
 
-    const [ artigo, setArtigo ] =  useState({})
+    const [ artigos, setArtigo ] =  useState({})
 
     useEffect(() => {
         fetch(`https://api.nytimes.com/svc/search/v2/articlesearch.json?q=election&api-key=${APIKey}
         `)
         .then(response => response.json())
-        .then(data => {
+        .then(data => setArtigo(data.results))
+    
+    }, [])
 
-            setArtigo(artigo)
-        })
-    })
+    return (
+        <>
+            {artigos.map(artigo => {
+                return (
+                    <ul>
+                        <li>
+                            
+                        </li>
+                    </ul>
+                )
+            })}
+        </>
+    )
 }
