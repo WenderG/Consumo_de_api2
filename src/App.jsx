@@ -34,6 +34,7 @@ const Home = () => {
 
             return(
               <article key={_id}>
+                <div className='main'>
                 <h2>{main}</h2>
                 <h4>{abstract}</h4>
                 <a href={web_url} target="_blank">Web Resource</a>
@@ -45,6 +46,7 @@ const Home = () => {
                   <li>{section_name}</li>
                   <li>{word_count}</li>
                 </ul>
+                </div>
               </article>
             )
           })}
