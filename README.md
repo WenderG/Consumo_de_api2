@@ -20,5 +20,7 @@ Projeto criado para a minha continuação dos estudos sobre REACT e consumo de A
 
 <br>
 
+:rocket: Deploy: https://consumo-de-api2.vercel.app
+
 ![1](https://user-images.githubusercontent.com/106935216/228210250-bb3c1f75-56ad-40cd-89fa-6297eeab3b92.png)
 
